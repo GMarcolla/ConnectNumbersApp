@@ -1,4 +1,4 @@
-﻿namespace ConnectAppsChat
+﻿namespace ConnectNumbersApp
 {
     internal class Program
     {
