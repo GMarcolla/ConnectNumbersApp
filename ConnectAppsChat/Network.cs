@@ -15,19 +15,18 @@ namespace ConnectAppsChat
             if (size <= 0)
                 throw new ArgumentException("Size must be a positive integer");
 
-            parent = new int[size + 1]; // +1 para facilitar indexação de 1 até size
-
+            parent = new int[size + 1];
+            
             for (int i = 1; i <= size; i++)
             {
                 parent[i] = i;
             }
-
         }
 
         private int Find(int x)
         {
             if (parent[x] != x)
-                parent[x] = Find(parent[x]); // Path compression
+                parent[x] = Find(parent[x]);
             return parent[x];
         }
 

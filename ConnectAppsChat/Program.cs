@@ -9,7 +9,6 @@
             network.Connect(6, 2);
             network.Connect(2, 4);
             network.Connect(5, 8);
-
             
             Console.WriteLine(network.Query(1, 6)); // True
             Console.WriteLine(network.Query(6, 1)); // True
